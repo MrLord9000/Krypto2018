@@ -2,38 +2,11 @@
 #include <fstream>
 #include <cstdlib>
 
+#include "naglowek.h"
+
 // Adrianna Dudek, Filip Mazurek i Julita Wlodarczyk
 
-using namespace std; 
-
-string tekst; //?
-
-int main()
-{
-    cout << "Zadanie 1: Użycie algorytmu DESX"<<endl;
-
-    cout << "Chcesz: \n1 - szyfrowac\n2 - deszyfrowac"<<endl;
-    short int co;
-    switch (co)
-    {
-        // szyfrowanie
-        case 1: 
-        cout << "Wybrales szyfrowanie " <<endl;
-        jak_dane();
-        
-       
-
-
-        //deszyfrowanie
-        case 2:
-        cout << "Wybrales deszyfrowanie" << endl;
-        jak_dane();
-
-    }
-
-    
-    return (0);
-}
+using namespace std;
 
 void jak_dane()
 {
