@@ -17,7 +17,6 @@ public:
     FileInput(const string &path);
     void loadFile(string &plainText);
     void closeFile();
-
 };
 
 

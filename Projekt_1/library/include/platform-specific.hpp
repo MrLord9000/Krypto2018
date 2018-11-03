@@ -8,5 +8,6 @@
 
 void cls();
 void wait(unsigned int timeInMs);
+void UTF_8();
 
 #endif //main_header_hpp

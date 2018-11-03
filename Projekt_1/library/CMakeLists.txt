@@ -7,6 +7,7 @@ set(SOURCE_FILES
 		src/algorithmDES.cpp
 		src/CarriageControl.cpp
 		src/platform-specific.cpp
+		src/BlockCreator.cpp
 		)
 		
 add_library(Library ${SOURCE_FILES})
