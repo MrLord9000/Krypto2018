@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "Projekt_1"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xstring": "cpp"
+		}
+	}
+}

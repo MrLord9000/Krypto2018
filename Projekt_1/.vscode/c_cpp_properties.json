@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceRoot}/library/include"
+                "${workspaceRoot}/library/include",
+                "${workspaceRoot}/program/include"
             ],
             "defines": [
                 "_DEBUG",

@@ -5,6 +5,8 @@ project(Library)
 set(SOURCE_FILES
 		src/fileInput.cpp
 		src/algorithmDES.cpp
+		src/CarriageControl.cpp
+		src/platform-specific.cpp
 		)
 		
 add_library(Library ${SOURCE_FILES})
