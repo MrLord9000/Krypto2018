@@ -1,0 +1,23 @@
+Co zrobiæ jak siê spier..li intelliSense w VS code?
+
+Uwaga! ¯eby to dzia³a³o trzeba mieæ zainstalowane rozszerzenie C++ IntelliSense for VS Code.
+
+Otó¿ to bardzo proste.
+Wchodzimy do .vscode (Powinno byæ w Projekt_1)
+Je¿eli kazaliœmy przeprowadziæ automatyczn¹ konfiguracjê to powinniœmy zobaczyæ dwa pliki: c_cpp_properties.json oraz settings.json (co do tego drugiego nie jestem pewny, obchodzi nas ten pierwszy)
+Wchodzimy do c_cpp_properties.json i szukamy include path.
+Zmieniamy go na coœ takiego:
+"includePath": [
+                "${workspaceRoot}/library/include",
+                "${workspaceRoot}/program/include"
+				]
+Za ka¿dym razem gdy dodamy nowy folder z plikami nag³ówkowymi, powinniœmy dodaæ jego œcie¿kê do tego pliku.
+
+To jeszcze nie koniec, schodzimy ni¿ej i znajdujemy "compilerPath".
+Ma on wygl¹daæ tak:
+"compilerPath": "<œcie¿ka do folderu gdzie zainstalowaliœmy msys'a 2>/mingw64/bin/g++.exe"
+
+Gdzie <œcie¿ka do folderu gdzie zainstalowaliœmy msys'a 2> to faktyczna œcie¿ka do folderu msys2 w naszym systemie.
+(u mnie jest to na przyk³ad po prostu E:/msys2)
+
+Mo¿liwe ¿e zadzia³a³oby to po prostu z path'a, ale ju¿ nie chcia³o mi siê z tym bawiæ.
