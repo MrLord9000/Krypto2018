@@ -8,6 +8,6 @@ set(SOURCE_FILES
 
 add_executable(Program ${SOURCE_FILES})
 
-#target_link_libraries(Program Library)
+target_link_libraries(Program Library)
 
 target_include_directories(Program PUBLIC include)

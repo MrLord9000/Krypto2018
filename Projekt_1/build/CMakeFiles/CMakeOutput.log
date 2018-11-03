@@ -28,32 +28,32 @@ The CXX compiler identification is GNU, found in "a:/Kod_projekty/Krypto_Repo/Kr
 Determining if the C compiler works passed with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_d31fa/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d31fa.dir\build.make CMakeFiles/cmTC_d31fa.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_1b654/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1b654.dir\build.make CMakeFiles/cmTC_1b654.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d31fa.dir/testCCompiler.c.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_d31fa.dir\testCCompiler.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_d31fa.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d31fa.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_d31fa.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d31fa.dir/objects.a @CMakeFiles\cmTC_d31fa.dir\objects1.rsp
-E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_d31fa.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d31fa.exe -Wl,--out-implib,libcmTC_d31fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d31fa.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_1b654.dir/testCCompiler.c.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_1b654.dir\testCCompiler.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_1b654.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_1b654.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_1b654.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_1b654.dir/objects.a @CMakeFiles\cmTC_1b654.dir\objects1.rsp
+E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_1b654.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1b654.exe -Wl,--out-implib,libcmTC_1b654.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1b654.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_7b37e/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7b37e.dir\build.make CMakeFiles/cmTC_7b37e.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_d8dfe/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d8dfe.dir\build.make CMakeFiles/cmTC_d8dfe.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7b37e.dir/CMakeCCompilerABI.c.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_7b37e.dir\CMakeCCompilerABI.c.obj   -c A:\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c
-Linking C executable cmTC_7b37e.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7b37e.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7b37e.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_7b37e.dir/objects.a @CMakeFiles\cmTC_7b37e.dir\objects1.rsp
-E:\msys2\mingw64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7b37e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7b37e.exe -Wl,--out-implib,libcmTC_7b37e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building C object CMakeFiles/cmTC_d8dfe.dir/CMakeCCompilerABI.c.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_d8dfe.dir\CMakeCCompilerABI.c.obj   -c A:\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c
+Linking C executable cmTC_d8dfe.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d8dfe.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_d8dfe.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d8dfe.dir/objects.a @CMakeFiles\cmTC_d8dfe.dir\objects1.rsp
+E:\msys2\mingw64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_d8dfe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d8dfe.exe -Wl,--out-implib,libcmTC_d8dfe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=E:\msys2\mingw64\bin\gcc.exe
 COLLECT_LTO_WRAPPER=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe
@@ -63,9 +63,9 @@ Thread model: posix
 gcc version 8.2.0 (Rev3, Built by MSYS2 project) 
 COMPILER_PATH=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/;E:/msys2/mingw64/bin/../lib/gcc/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/;E:/msys2/mingw64/bin/../lib/gcc/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b37e.exe' '-mtune=generic' '-march=x86-64'
- E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cca6DMsr.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_7b37e.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_7b37e.dir/objects.a --no-whole-archive --out-implib libcmTC_7b37e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b37e.exe' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8dfe.exe' '-mtune=generic' '-march=x86-64'
+ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccHCcFnk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_d8dfe.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_d8dfe.dir/objects.a --no-whole-archive --out-implib libcmTC_d8dfe.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8dfe.exe' '-mtune=generic' '-march=x86-64'
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -73,16 +73,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_7b37e/fast"]
-  ignore line: [E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7b37e.dir\build.make CMakeFiles/cmTC_7b37e.dir/build]
+  ignore line: [Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_d8dfe/fast"]
+  ignore line: [E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d8dfe.dir\build.make CMakeFiles/cmTC_d8dfe.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_7b37e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_7b37e.dir\CMakeCCompilerABI.c.obj   -c A:\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_7b37e.exe]
-  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7b37e.dir\link.txt --verbose=1]
-  ignore line: [A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7b37e.dir/objects.a]
-  ignore line: [E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_7b37e.dir/objects.a @CMakeFiles\cmTC_7b37e.dir\objects1.rsp]
-  ignore line: [E:\msys2\mingw64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7b37e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7b37e.exe -Wl,--out-implib,libcmTC_7b37e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building C object CMakeFiles/cmTC_d8dfe.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_d8dfe.dir\CMakeCCompilerABI.c.obj   -c A:\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d8dfe.exe]
+  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d8dfe.dir\link.txt --verbose=1]
+  ignore line: [A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_d8dfe.dir/objects.a]
+  ignore line: [E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d8dfe.dir/objects.a @CMakeFiles\cmTC_d8dfe.dir\objects1.rsp]
+  ignore line: [E:\msys2\mingw64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_d8dfe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d8dfe.exe -Wl,--out-implib,libcmTC_d8dfe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=E:\msys2\mingw64\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe]
@@ -99,13 +99,13 @@ Parsed C implicit link information from above output:
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib/]
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b37e.exe' '-mtune=generic' '-march=x86-64']
-  link line: [ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cca6DMsr.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_7b37e.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_7b37e.dir/objects.a --no-whole-archive --out-implib libcmTC_7b37e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8dfe.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccHCcFnk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_d8dfe.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_d8dfe.dir/objects.a --no-whole-archive --out-implib libcmTC_d8dfe.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o]
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cca6DMsr.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccHCcFnk.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -127,7 +127,7 @@ Parsed C implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7b37e.exe] ==> ignore
+    arg [cmTC_d8dfe.exe] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o] ==> ignore
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0]
@@ -137,10 +137,10 @@ Parsed C implicit link information from above output:
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib]
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../..] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_7b37e.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_d8dfe.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_7b37e.dll.a] ==> ignore
+    arg [libcmTC_d8dfe.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -184,16 +184,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_52413/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_52413.dir\build.make CMakeFiles/cmTC_52413.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_d42bd/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_d42bd.dir\build.make CMakeFiles/cmTC_d42bd.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_52413.dir/feature_tests.c.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_52413.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_52413.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_52413.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_52413.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_52413.dir/objects.a @CMakeFiles\cmTC_52413.dir\objects1.rsp
-E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_52413.dir/objects.a -Wl,--no-whole-archive  -o cmTC_52413.exe -Wl,--out-implib,libcmTC_52413.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_52413.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_d42bd.dir/feature_tests.c.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_d42bd.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_d42bd.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d42bd.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_d42bd.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d42bd.dir/objects.a @CMakeFiles\cmTC_d42bd.dir\objects1.rsp
+E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_d42bd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d42bd.exe -Wl,--out-implib,libcmTC_d42bd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d42bd.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -206,16 +206,16 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_7a4ab/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7a4ab.dir\build.make CMakeFiles/cmTC_7a4ab.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_4d83a/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_4d83a.dir\build.make CMakeFiles/cmTC_4d83a.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7a4ab.dir/feature_tests.c.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_7a4ab.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_7a4ab.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7a4ab.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7a4ab.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_7a4ab.dir/objects.a @CMakeFiles\cmTC_7a4ab.dir\objects1.rsp
-E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_7a4ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7a4ab.exe -Wl,--out-implib,libcmTC_7a4ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7a4ab.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_4d83a.dir/feature_tests.c.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_4d83a.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_4d83a.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_4d83a.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_4d83a.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_4d83a.dir/objects.a @CMakeFiles\cmTC_4d83a.dir\objects1.rsp
+E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_4d83a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4d83a.exe -Wl,--out-implib,libcmTC_4d83a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4d83a.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -228,16 +228,16 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_a7481/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a7481.dir\build.make CMakeFiles/cmTC_a7481.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_7a124/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_7a124.dir\build.make CMakeFiles/cmTC_7a124.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a7481.dir/feature_tests.c.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_a7481.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_a7481.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a7481.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a7481.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_a7481.dir/objects.a @CMakeFiles\cmTC_a7481.dir\objects1.rsp
-E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_a7481.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a7481.exe -Wl,--out-implib,libcmTC_a7481.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a7481.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_7a124.dir/feature_tests.c.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_7a124.dir\feature_tests.c.obj   -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_7a124.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7a124.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7a124.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_7a124.dir/objects.a @CMakeFiles\cmTC_7a124.dir\objects1.rsp
+E:\msys2\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_7a124.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7a124.exe -Wl,--out-implib,libcmTC_7a124.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7a124.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -248,32 +248,32 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Determining if the CXX compiler works passed with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_fa2ef/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_fa2ef.dir\build.make CMakeFiles/cmTC_fa2ef.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_f3874/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f3874.dir\build.make CMakeFiles/cmTC_f3874.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fa2ef.dir/testCXXCompiler.cxx.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_fa2ef.dir\testCXXCompiler.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_fa2ef.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_fa2ef.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_fa2ef.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_fa2ef.dir/objects.a @CMakeFiles\cmTC_fa2ef.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_fa2ef.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fa2ef.exe -Wl,--out-implib,libcmTC_fa2ef.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fa2ef.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_f3874.dir/testCXXCompiler.cxx.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_f3874.dir\testCXXCompiler.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_f3874.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f3874.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f3874.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_f3874.dir/objects.a @CMakeFiles\cmTC_f3874.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_f3874.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f3874.exe -Wl,--out-implib,libcmTC_f3874.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f3874.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_f4b33/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f4b33.dir\build.make CMakeFiles/cmTC_f4b33.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_35c91/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_35c91.dir\build.make CMakeFiles/cmTC_35c91.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f4b33.dir/CMakeCXXCompilerABI.cpp.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_f4b33.dir\CMakeCXXCompilerABI.cpp.obj -c A:\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f4b33.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f4b33.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f4b33.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_f4b33.dir/objects.a @CMakeFiles\cmTC_f4b33.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_f4b33.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f4b33.exe -Wl,--out-implib,libcmTC_f4b33.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building CXX object CMakeFiles/cmTC_35c91.dir/CMakeCXXCompilerABI.cpp.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_35c91.dir\CMakeCXXCompilerABI.cpp.obj -c A:\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_35c91.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_35c91.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_35c91.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_35c91.dir/objects.a @CMakeFiles\cmTC_35c91.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_35c91.dir/objects.a -Wl,--no-whole-archive  -o cmTC_35c91.exe -Wl,--out-implib,libcmTC_35c91.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=E:\msys2\mingw64\bin\g++.exe
 COLLECT_LTO_WRAPPER=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe
@@ -283,9 +283,9 @@ Thread model: posix
 gcc version 8.2.0 (Rev3, Built by MSYS2 project) 
 COMPILER_PATH=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/;E:/msys2/mingw64/bin/../lib/gcc/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/bin/
 LIBRARY_PATH=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/;E:/msys2/mingw64/bin/../lib/gcc/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/;E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4b33.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cc8Urudf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_f4b33.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_f4b33.dir/objects.a --no-whole-archive --out-implib libcmTC_f4b33.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4b33.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35c91.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccv65jSC.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_35c91.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_35c91.dir/objects.a --no-whole-archive --out-implib libcmTC_35c91.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35c91.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -293,16 +293,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_f4b33/fast"]
-  ignore line: [E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_f4b33.dir\build.make CMakeFiles/cmTC_f4b33.dir/build]
+  ignore line: [Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_35c91/fast"]
+  ignore line: [E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_35c91.dir\build.make CMakeFiles/cmTC_35c91.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f4b33.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_f4b33.dir\CMakeCXXCompilerABI.cpp.obj -c A:\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f4b33.exe]
-  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f4b33.dir\link.txt --verbose=1]
-  ignore line: [A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_f4b33.dir/objects.a]
-  ignore line: [E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_f4b33.dir/objects.a @CMakeFiles\cmTC_f4b33.dir\objects1.rsp]
-  ignore line: [E:\msys2\mingw64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_f4b33.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f4b33.exe -Wl,--out-implib,libcmTC_f4b33.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_35c91.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe     -o CMakeFiles\cmTC_35c91.dir\CMakeCXXCompilerABI.cpp.obj -c A:\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_35c91.exe]
+  ignore line: [cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_35c91.dir\link.txt --verbose=1]
+  ignore line: [A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_35c91.dir/objects.a]
+  ignore line: [E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_35c91.dir/objects.a @CMakeFiles\cmTC_35c91.dir\objects1.rsp]
+  ignore line: [E:\msys2\mingw64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_35c91.dir/objects.a -Wl,--no-whole-archive  -o cmTC_35c91.exe -Wl,--out-implib,libcmTC_35c91.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=E:\msys2\mingw64\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe]
@@ -319,13 +319,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib/]
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/]
   ignore line: [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4b33.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cc8Urudf.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_f4b33.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_f4b33.dir/objects.a --no-whole-archive --out-implib libcmTC_f4b33.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_35c91.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe -plugin E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccv65jSC.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -m i386pep -Bdynamic -o cmTC_35c91.exe E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0 -LE:/msys2/mingw64/bin/../lib/gcc -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib -LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_35c91.dir/objects.a --no-whole-archive --out-implib libcmTC_35c91.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtend.o]
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\cc8Urudf.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Lord9000\AppData\Local\Temp\ccv65jSC.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -347,7 +347,7 @@ Parsed CXX implicit link information from above output:
     arg [i386pep] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f4b33.exe] ==> ignore
+    arg [cmTC_35c91.exe] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/crtbegin.o] ==> ignore
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0]
@@ -357,10 +357,10 @@ Parsed CXX implicit link information from above output:
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../../../x86_64-w64-mingw32/lib]
     arg [-LE:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../..] ==> dir [E:/msys2/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.2.0/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_f4b33.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_35c91.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_f4b33.dll.a] ==> ignore
+    arg [libcmTC_35c91.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -403,16 +403,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_fb513/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_fb513.dir\build.make CMakeFiles/cmTC_fb513.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_b458d/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_b458d.dir\build.make CMakeFiles/cmTC_b458d.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fb513.dir/feature_tests.cxx.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++1z -o CMakeFiles\cmTC_fb513.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_fb513.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_fb513.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_fb513.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_fb513.dir/objects.a @CMakeFiles\cmTC_fb513.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_fb513.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fb513.exe -Wl,--out-implib,libcmTC_fb513.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fb513.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_b458d.dir/feature_tests.cxx.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++1z -o CMakeFiles\cmTC_b458d.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_b458d.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_b458d.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_b458d.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_b458d.dir/objects.a @CMakeFiles\cmTC_b458d.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_b458d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b458d.exe -Wl,--out-implib,libcmTC_b458d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b458d.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -478,16 +478,16 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_1f01e/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_1f01e.dir\build.make CMakeFiles/cmTC_1f01e.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_5fd0e/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_5fd0e.dir\build.make CMakeFiles/cmTC_5fd0e.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1f01e.dir/feature_tests.cxx.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_1f01e.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_1f01e.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_1f01e.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_1f01e.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_1f01e.dir/objects.a @CMakeFiles\cmTC_1f01e.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_1f01e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1f01e.exe -Wl,--out-implib,libcmTC_1f01e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1f01e.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_5fd0e.dir/feature_tests.cxx.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_5fd0e.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_5fd0e.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_5fd0e.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_5fd0e.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_5fd0e.dir/objects.a @CMakeFiles\cmTC_5fd0e.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_5fd0e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5fd0e.exe -Wl,--out-implib,libcmTC_5fd0e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5fd0e.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -553,16 +553,16 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_bd23e/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_bd23e.dir\build.make CMakeFiles/cmTC_bd23e.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_0168d/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_0168d.dir\build.make CMakeFiles/cmTC_0168d.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bd23e.dir/feature_tests.cxx.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_bd23e.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_bd23e.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_bd23e.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_bd23e.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_bd23e.dir/objects.a @CMakeFiles\cmTC_bd23e.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_bd23e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bd23e.exe -Wl,--out-implib,libcmTC_bd23e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bd23e.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_0168d.dir/feature_tests.cxx.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_0168d.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_0168d.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_0168d.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_0168d.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_0168d.dir/objects.a @CMakeFiles\cmTC_0168d.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_0168d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0168d.exe -Wl,--out-implib,libcmTC_0168d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0168d.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 
@@ -628,16 +628,16 @@ mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/P
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_50d5e/fast"
-E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_50d5e.dir\build.make CMakeFiles/cmTC_50d5e.dir/build
+Run Build Command:"E:/msys2/mingw64/bin/mingw32-make.exe" "cmTC_a9db8/fast"
+E:/msys2/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_a9db8.dir\build.make CMakeFiles/cmTC_a9db8.dir/build
 mingw32-make.exe[1]: Entering directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_50d5e.dir/feature_tests.cxx.obj
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_50d5e.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_50d5e.exe
-cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_50d5e.dir\link.txt --verbose=1
-A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_50d5e.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_50d5e.dir/objects.a @CMakeFiles\cmTC_50d5e.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_50d5e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_50d5e.exe -Wl,--out-implib,libcmTC_50d5e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_50d5e.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_a9db8.dir/feature_tests.cxx.obj
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && E:\msys2\mingw64\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_a9db8.dir\feature_tests.cxx.obj -c A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_a9db8.exe
+cd /d A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles\CMakeTmp && A:\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a9db8.dir\link.txt --verbose=1
+A:\CMake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a9db8.dir/objects.a
+E:\msys2\mingw64\bin\ar.exe cr CMakeFiles\cmTC_a9db8.dir/objects.a @CMakeFiles\cmTC_a9db8.dir\objects1.rsp
+E:\msys2\mingw64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_a9db8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a9db8.exe -Wl,--out-implib,libcmTC_a9db8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a9db8.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'a:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/CMakeFiles/CMakeTmp'
 
 

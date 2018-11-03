@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/program/source/main.cpp
+../library/include/fileInput.hpp
+fstream
+-
+string
+-
 iostream
 -
+
+../program/include/platform-specific.hpp
+conio.h
+-
+
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/program/source/main.cpp
+fileInput.hpp
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/program/source/fileInput.hpp
+platform-specific.hpp
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/program/source/platform-specific.hpp
 

@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceRoot}/library/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -11,7 +11,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.16299.0",
-            "compilerPath": "A:/Visual Studio 2017 Enterprise/VC/Tools/MSVC/14.13.26128/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "E:/msys2/mingw64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "msvc-x64",

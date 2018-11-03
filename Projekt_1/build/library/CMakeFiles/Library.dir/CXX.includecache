@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../library/include/algorithmDES.hpp
+
+../library/include/fileInput.hpp
+fstream
+-
+string
+-
+iostream
+-
+
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/library/src/algorithmDES.cpp
+algorithmDES.hpp
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/library/src/algorithmDES.hpp
+
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/library/src/fileInput.cpp
+fileInput.hpp
+A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/library/src/fileInput.hpp
+

@@ -17,8 +17,9 @@
 //Path to a program.
 CMAKE_AR:FILEPATH=E:/msys2/mingw64/bin/ar.exe
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Debug
+//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
+// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -97,9 +98,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
-
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Convert GNU import libraries to MS format (requires Visual Studio)
 CMAKE_GNUtoMS:BOOL=OFF
@@ -216,6 +214,15 @@ KryptoProjekt_01_BINARY_DIR:STATIC=A:/Kod_projekty/Krypto_Repo/Krypto2018/Projek
 KryptoProjekt_01_SOURCE_DIR:STATIC=A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1
 
 //Value Computed by CMake
+Library_BINARY_DIR:STATIC=A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/library
+
+//Dependencies for target
+Library_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+Library_SOURCE_DIR:STATIC=A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/library
+
+//Value Computed by CMake
 Program_BINARY_DIR:STATIC=A:/Kod_projekty/Krypto_Repo/Krypto2018/Projekt_1/build/program
 
 //Value Computed by CMake
@@ -322,7 +329,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

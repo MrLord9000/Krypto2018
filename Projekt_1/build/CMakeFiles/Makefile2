@@ -83,10 +83,10 @@ program/preinstall:
 # Target rules for target program/CMakeFiles/Program.dir
 
 # All Build rule for target.
-program/CMakeFiles/Program.dir/all:
+program/CMakeFiles/Program.dir/all: library/CMakeFiles/Library.dir/all
 	$(MAKE) -f program\CMakeFiles\Program.dir\build.make program/CMakeFiles/Program.dir/depend
 	$(MAKE) -f program\CMakeFiles\Program.dir\build.make program/CMakeFiles/Program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles --progress-num=1,2 "Built target Program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles --progress-num=4,5 "Built target Program"
 .PHONY : program/CMakeFiles/Program.dir/all
 
 # Include target in all.
@@ -96,7 +96,7 @@ all: program/CMakeFiles/Program.dir/all
 
 # Build rule for subdir invocation for target.
 program/CMakeFiles/Program.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 program/CMakeFiles/Program.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles 0
 .PHONY : program/CMakeFiles/Program.dir/rule
@@ -113,6 +113,61 @@ program/CMakeFiles/Program.dir/clean:
 
 # clean rule for target.
 clean: program/CMakeFiles/Program.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory library
+
+# Convenience name for "all" pass in the directory.
+library/all: library/CMakeFiles/Library.dir/all
+
+.PHONY : library/all
+
+# Convenience name for "clean" pass in the directory.
+library/clean: library/CMakeFiles/Library.dir/clean
+
+.PHONY : library/clean
+
+# Convenience name for "preinstall" pass in the directory.
+library/preinstall:
+
+.PHONY : library/preinstall
+
+#=============================================================================
+# Target rules for target library/CMakeFiles/Library.dir
+
+# All Build rule for target.
+library/CMakeFiles/Library.dir/all:
+	$(MAKE) -f library\CMakeFiles\Library.dir\build.make library/CMakeFiles/Library.dir/depend
+	$(MAKE) -f library\CMakeFiles\Library.dir\build.make library/CMakeFiles/Library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles --progress-num=1,2,3 "Built target Library"
+.PHONY : library/CMakeFiles/Library.dir/all
+
+# Include target in all.
+all: library/CMakeFiles/Library.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+library/CMakeFiles/Library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 library/CMakeFiles/Library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start A:\Kod_projekty\Krypto_Repo\Krypto2018\Projekt_1\build\CMakeFiles 0
+.PHONY : library/CMakeFiles/Library.dir/rule
+
+# Convenience name for target.
+Library: library/CMakeFiles/Library.dir/rule
+
+.PHONY : Library
+
+# clean rule for target.
+library/CMakeFiles/Library.dir/clean:
+	$(MAKE) -f library\CMakeFiles\Library.dir\build.make library/CMakeFiles/Library.dir/clean
+.PHONY : library/CMakeFiles/Library.dir/clean
+
+# clean rule for target.
+clean: library/CMakeFiles/Library.dir/clean
 
 .PHONY : clean
 
