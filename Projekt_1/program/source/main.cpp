@@ -2,8 +2,10 @@
 #include "platform-specific.hpp"    //  Windows or Linux specific commands such as clear/cls (unfinished)
 #include "CarriageControl.hpp"      //  Simple external finctions for cursor manipulation and cleaner presentation
 #include "BlockCreator.hpp"         //  First necessary cryptographic function, it contains functionality to convert strings into 64bit blocks
+#include "algorithmDES.hpp"
 
 /*  ALL TO-DO THINGS:
+ *  WARINING! PARITY SET DOESN'T WORK WELL! IT SETS VALUES IN WRONG PLACE.
  *  #include statements are probably duplicate between files in library
  *  Fix platform-specific functions to work with linux
  *  Add proper exception handling (in FileInput class).
@@ -115,8 +117,10 @@ int main()
      * all the plain text block fragmentation and operations.
      */
     Block textBlock( plainText.c_str() );
-
-    cout << "Test 64bitowego bloku: " << textBlock.getBlock();
+    
+    DataEncryptionStandard cryptoTest(textBlock.getBlock());
+    cout << "\nTo jest klucz z kontrolą parzystości: " << cryptoTest.getKey();
+    cout << "\nZapis binarny: " << bitset<64>(cryptoTest.getKey());
 
     return 0;
 }
