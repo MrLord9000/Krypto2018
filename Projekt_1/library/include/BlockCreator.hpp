@@ -5,8 +5,10 @@
 
 class Block
 {
-private:
+protected:
     uint64_t currentBlock = 0;
+
+private:
     const char *textPosPointer;
 
 public:

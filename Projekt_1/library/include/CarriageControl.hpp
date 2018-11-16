@@ -1,6 +1,6 @@
 #ifndef Carriage_Control_hpp
 #define Carriage_Control_hpp
 
-void gotoxy(int x, int y);
+void gotoxy(short x, short y);
 
 #endif //Carriage_Control_hpp

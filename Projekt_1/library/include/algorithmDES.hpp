@@ -7,23 +7,25 @@
 #include <bitset>
 #include <iostream>
 
+#include "BlockCreator.hpp"
+
 using std::bitset;
 
-class DataEncryptionStandard
+class DataEncryptionStandard : Block
 {
 private:
-    uint64_t block;
     uint64_t cryptogram;
     uint64_t key;
     bitset<64> temp;
-    bitset<64> permutationInitial_64_64();
+    //bitset<64> permutationInitial_64_64();
     void paritySet();
+    void checkForWeakKey();
 
 public:
-    DataEncryptionStandard(int64_t mainBlock);
+    DataEncryptionStandard(std::string plainText);
     void keyGen();
     uint64_t getKey(); // Delete this later!
-
+    bitset<64> permutationInitial_64_64(); //Should be private
 };
 
 

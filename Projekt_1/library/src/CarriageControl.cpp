@@ -3,7 +3,7 @@
 #ifdef _WIN32
 
 #include <windows.h>
-void gotoxy(int x, int y)
+void gotoxy(short x, short y)
 {
     COORD pos = {x, y};
     SetConsoleCursorPosition( GetStdHandle(STD_OUTPUT_HANDLE), pos);

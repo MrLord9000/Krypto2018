@@ -116,11 +116,12 @@ int main()
      * Creating the Block class object called textBlock. This object will be responsible for
      * all the plain text block fragmentation and operations.
      */
-    Block textBlock( plainText.c_str() );
     
-    DataEncryptionStandard cryptoTest(textBlock.getBlock());
+    DataEncryptionStandard cryptoTest(plainText);
     cout << "\nTo jest klucz z kontrolą parzystości: " << cryptoTest.getKey();
     cout << "\nZapis binarny: " << bitset<64>(cryptoTest.getKey());
+    //cout << "\nBlok: " << bitset<64>(textBlock.getBlock());
+    cout << "\nPerm: " << cryptoTest.permutationInitial_64_64();
 
     return 0;
 }
