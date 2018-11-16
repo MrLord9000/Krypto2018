@@ -7,14 +7,13 @@ class Block
 {
 protected:
     uint64_t currentBlock = 0;
+    Block(const char *plainText);
+    uint64_t getBlock();
+    uint64_t nextBlock();
 
 private:
     const char *textPosPointer;
 
-public:
-    Block(const char *plainText);
-    uint64_t getBlock();
-    uint64_t nextBlock();
 };
 
 #endif //BlockCreator_hpp

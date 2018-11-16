@@ -44,7 +44,7 @@ int main()
  *  Important string plainText definition.
  *  This variable will be used as a main container for plain text which will get encrypted.
  */
-    string plainText;
+                string plainText;
 //  =======================================================================================
     
 /*  =======================================================================================
@@ -122,6 +122,7 @@ int main()
     cout << "\nZapis binarny: " << bitset<64>(cryptoTest.getKey());
     //cout << "\nBlok: " << bitset<64>(textBlock.getBlock());
     cout << "\nPerm: " << cryptoTest.permutationInitial_64_64();
+    cryptoTest.split(leftSide);
 
     return 0;
 }

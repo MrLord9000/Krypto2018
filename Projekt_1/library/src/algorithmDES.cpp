@@ -11,42 +11,46 @@ void DataEncryptionStandard::keyGen()
     key = 0;
     srand( time(0) );   // Pseudo-random for key generation
                         // Warining! This is not secure and definitely not recommended
-    for(int i = 0; i < 4; i++)
+    bool isKeyInvalid = false;
+    do
     {
-        key = key << 16;
-        key += rand();
-    }
-    std::cout << "\nKlucz przed kontrolą parzystości: " << bitset<64>(key);
-    paritySet();
+        // This loop is introduced to automatically re-generate the key if one is weak or invalid
+        for(int i = 0; i < 4; i++)
+        {
+            key = key << 16;
+            key += rand();
+        }
+        std::cout << "\nKlucz przed kontrolą parzystości: " << bitset<64>(key);
+        paritySet();
+        isKeyInvalid = checkForWeakKey();
+    } while(isKeyInvalid);
+    
 }
 
-void DataEncryptionStandard::checkForWeakKey()
+bool DataEncryptionStandard::checkForWeakKey()
 {
+    // Patterns of weak and half-weak keys copied from wikipedia.
+    // Used in two loops below to check whether the generated key is weak.
     const uint64_t weakKeys[] =     {0x0000000000000000, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFF00000000, 0x00000000FFFFFFFF};
     const uint64_t halfWeakKeys[] = {0x01FE01FE01FE01FE, 0xFE01FE01FE01FE01, 0x1FE01FE00EF10EF1, 0xE01FE01FF10EF10E,
                                      0x01E001E001F101F1, 0xE001E001F101F101, 0x1FFE1FFE0EFE0EFE, 0xFE1FFE1FFE0EFE0E,
                                      0x011F011F010E010E, 0x1F011F010E010E01, 0xE0FEE0FEF1FEF1FE, 0xFEE0FEE0FEF1FEF1};
-    bool loop = false;
-    do
+
+    for(int i = 0; i < 4; i++)
     {
-        for(int i = 0; i < 4 && loop; i++)
+        if(weakKeys[i] == key) 
         {
-            if(weakKeys[i] == key) 
-            {
-                keyGen();
-                loop = true;
-            }
+            return true;
         }
-        for(int i = 0; i < 12 && loop == false; i++)
+    }
+    for(int i = 0; i < 12; i++)
+    {
+        if(halfWeakKeys[i] == key)
         {
-            if(halfWeakKeys[i] == key)
-            {
-                keyGen();
-                loop = true;
-            }
+            return true;
         }
-    } while(loop);
-    
+    }
+    return false;
 }
 
 void DataEncryptionStandard::paritySet()
@@ -103,4 +107,25 @@ bitset<64> DataEncryptionStandard::permutationInitial_64_64()
         permutation[i] = original[ permPositions[i] ];
     }
     return permutation;
+}
+
+uint32_t DataEncryptionStandard::split(Sides lr)
+{
+    uint64_t temp_test = key;
+    std::cout << "\nKlucz: " << temp_test;
+    std::cout << "\nBinarnie: " << bitset<64>(temp_test);
+    std::cout << "\nPrawa strona: " << bitset<32>(static_cast<uint32_t>(temp_test));
+    temp_test = temp_test >> 32;
+    std::cout << "\nLewa strona: " << bitset<32>(static_cast<uint32_t>(temp_test));
+    switch(lr)
+    {
+        case rightSide:
+            return static_cast<uint32_t>(temp_test);
+        break;
+
+        case leftSide:
+            return 0;
+        break;
+    }
+    return 0;
 }
