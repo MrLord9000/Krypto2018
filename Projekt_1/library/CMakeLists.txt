@@ -7,8 +7,9 @@ set(SOURCE_FILES
 		src/platform-specific.cpp
 		src/CarriageControl.cpp
 		src/BlockCreator.cpp
-		src/DES_other.cpp
+		src/DES_Other.cpp
 		src/DES_Permutations.cpp
+		src/DES_Crypt.cpp
 		src/Key.cpp
 		)
 		

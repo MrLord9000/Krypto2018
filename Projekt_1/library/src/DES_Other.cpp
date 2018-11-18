@@ -41,3 +41,26 @@ uint32_t DES::split(Sides side, Component comp)
     return 0;
 }
 // ================================================================================================
+
+uint32_t DES::leftCircularShift(uint32_t key28bit)
+{
+// Round-specific shift values
+    const uint8_t shift[] = {1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};
+
+    uint8_t shiftValue = shift[roundCount];
+    bitset<28> keyCopy = bitset<28>(key28bit);
+    bool overflowBit;
+    while(shiftValue)
+    {
+        overflowBit = keyCopy[27];
+        keyCopy <<= 1;
+        keyCopy[0] = overflowBit;
+        shiftValue--;
+    }
+    return keyCopy.to_ulong();
+}
+
+uint32_t S_boxes()
+{
+    
+}
