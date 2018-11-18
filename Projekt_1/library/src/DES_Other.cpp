@@ -60,7 +60,24 @@ uint32_t DES::leftCircularShift(uint32_t key28bit)
     return keyCopy.to_ulong();
 }
 
-uint32_t S_boxes()
+uint32_t DES::S_boxes(uint64_t input)
 {
+    bitset<32> output = 0;
+    bitset<6> S_temp;
+
+    for(int i = 0; i < 8; i++)
+    {
+        S_temp = static_cast<bitset<6>>(input);
+        output |= bitset<32>(S_box(S_temp));
+        output <<= 4;
+        input >>= 6;
+    }
     
+    return output.to_ulong();
+}
+
+uint8_t S_Box(bitset<6> input)
+{
+    bitset<4> column = ;
+
 }

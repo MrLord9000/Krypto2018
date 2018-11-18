@@ -29,8 +29,8 @@ private:
     uint64_t permutedChoice_I_64_56();
     uint64_t permutedChoice_II_28_28_48();
     uint64_t expansionPermutation_32_48();
-    uint32_t S_boxes();
-    uint8_t  S_box(uint8_t input);
+    uint32_t S_boxes(uint64_t input);
+    uint8_t  S_box(bitset<6> input);
     void round();
 public:
     DES(std::string plainText);
