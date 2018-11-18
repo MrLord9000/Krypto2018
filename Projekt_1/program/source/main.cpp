@@ -1,11 +1,10 @@
 #include "FileInput.hpp"            //  Simple file input class
 #include "platform-specific.hpp"    //  Windows or Linux specific commands such as clear/cls (unfinished)
 #include "CarriageControl.hpp"      //  Simple external finctions for cursor manipulation and cleaner presentation
-#include "BlockCreator.hpp"         //  First necessary cryptographic function, it contains functionality to convert strings into 64bit blocks
-#include "algorithmDES.hpp"
+//#include "BlockCreator.hpp"         //  First necessary cryptographic function, it contains functionality to convert strings into 64bit blocks
+#include "DES.hpp"
 
 /*  ALL TO-DO THINGS:
- *  WARINING! PARITY SET DOESN'T WORK WELL! IT SETS VALUES IN WRONG PLACE.
  *  #include statements are probably duplicate between files in library
  *  Fix platform-specific functions to work with linux
  *  Add proper exception handling (in FileInput class).
@@ -117,12 +116,7 @@ int main()
      * all the plain text block fragmentation and operations.
      */
     
-    DataEncryptionStandard cryptoTest(plainText);
-    cout << "\nTo jest klucz z kontrolą parzystości: " << cryptoTest.getKey();
-    cout << "\nZapis binarny: " << bitset<64>(cryptoTest.getKey());
-    //cout << "\nBlok: " << bitset<64>(textBlock.getBlock());
-    cout << "\nPerm: " << cryptoTest.permutationInitial_64_64();
-    cryptoTest.split(leftSide);
+    DES cryptoTest(plainText);
 
     return 0;
 }

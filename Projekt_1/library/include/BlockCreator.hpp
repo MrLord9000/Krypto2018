@@ -8,7 +8,6 @@ class Block
 protected:
     uint64_t currentBlock = 0;
     Block(const char *plainText);
-    uint64_t getBlock();
     uint64_t nextBlock();
 
 private:

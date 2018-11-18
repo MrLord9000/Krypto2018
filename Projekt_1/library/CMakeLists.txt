@@ -4,10 +4,12 @@ project(Library)
 
 set(SOURCE_FILES
 		src/fileInput.cpp
-		src/algorithmDES.cpp
-		src/CarriageControl.cpp
 		src/platform-specific.cpp
+		src/CarriageControl.cpp
 		src/BlockCreator.cpp
+		src/DES_other.cpp
+		src/DES_Permutations.cpp
+		src/Key.cpp
 		)
 		
 add_library(Library ${SOURCE_FILES})
