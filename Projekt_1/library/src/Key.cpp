@@ -2,10 +2,11 @@
 
 Key::Key()
 {
-    std::cout << "\nKonstruktor KEY został wywołany.";
     srand( time(0) );   // Pseudo-random for key generation 
                         // Warining! This is not secure and definitely not recommended
-    keyGen();
+//    keyGen();
+    key = 0xF5F3FF12F3FAFFAF;
+    paritySet();
 }
 
 void Key::keyGen()

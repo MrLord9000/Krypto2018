@@ -85,10 +85,10 @@ uint64_t DES::expansionPermutation_32_48()
     return permutation.to_ullong();
 }
 
-uint32_t DES::permutation_32_32()
+uint32_t DES::permutation_32_32(uint32_t input)
 {
     bitset<32> permutation;
-    bitset<32> original = static_cast<bitset<32>>(rText);
+    bitset<32> original = static_cast<bitset<32>>(input);
     
     const unsigned short permPositions[48] = {16,  7, 20, 21, 29, 12, 28, 17,
                                                1, 15, 23, 26,  5, 18, 31, 10,

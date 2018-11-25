@@ -117,6 +117,14 @@ int main()
      */
     
     DES cryptoTest(plainText);
-
+    uint64_t cipher = cryptoTest.encrypt();
+    cout << "Chwila prawdy: " << hex << cipher << endl;
+    char test[8];
+    for(int i = 0; i < 8; i++)
+    {
+        test[i] = static_cast<char>(cipher);
+        cout << test[i] << " ";
+        cipher = cipher >> 8;
+    }
     return 0;
 }

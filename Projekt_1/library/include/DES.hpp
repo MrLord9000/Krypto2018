@@ -23,7 +23,7 @@ private:
     int32_t lKey;
     int32_t rKey;
     //uint64_t cryptogram; //Probably won't be nesessary as the main function will just return the cryptogram.
-    uint32_t split(Sides side, Component comp);
+    uint32_t split(Sides side, Component comp, uint64_t input);
     uint32_t leftCircularShift(uint32_t key28bit);
     uint64_t permutationInitial_64_64();
     uint64_t permutedChoice_I_64_56();
@@ -32,11 +32,11 @@ private:
     uint64_t inverseInitialPermutation_64_64(uint64_t input);
     uint32_t S_boxes(uint64_t input);
     uint32_t S_box(bitset<6> input, short n);
-    uint32_t permutation_32_32();
+    uint32_t permutation_32_32(uint32_t input);
     void round();
 public:
     DES(std::string plainText);
-    void encrypt();
+    uint64_t encrypt();
     
 };
 
