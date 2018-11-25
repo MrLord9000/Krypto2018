@@ -6,16 +6,17 @@ void DES::encrypt()
     int64_t roundKey;
     ciphertextTemp = permutationInitial_64_64();
     roundKey = permutedChoice_I_64_56();
+    // Splitting the plaintext and key into left and right sides.
+    lText = leftCircularShift(split(leftSide, textComp));
+    rText = leftCircularShift(split(rightSide, textComp));
+    lKey = leftCircularShift(split(leftSide, keyComp));
+    rKey = leftCircularShift(split(rightSide, keyComp));
 
 }
 
 void DES::round()
 {
-// Splitting the plaintext and key into left and right sides.
-    lText = leftCircularShift(split(leftSide, textComp));
-    rText = leftCircularShift(split(rightSide, textComp));
-    lKey = leftCircularShift(split(leftSide, keyComp));
-    rKey = leftCircularShift(split(rightSide, keyComp));
+
 
 // Working on the key
     int64_t tempKey_48 = permutedChoice_II_28_28_48();

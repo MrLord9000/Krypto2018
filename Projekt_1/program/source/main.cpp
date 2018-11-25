@@ -100,7 +100,7 @@ int main()
             gotoxy(1, 4);
 
             cout << "@\tPlaintext input succesful, proceeding in 3 s...";
-            wait(3000);
+            //wait(3000);
             break;
         }  
     }

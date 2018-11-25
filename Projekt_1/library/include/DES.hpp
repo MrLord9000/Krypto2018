@@ -13,7 +13,7 @@ using std::bitset;
 enum Sides {leftSide, rightSide};
 enum Component {textComp, keyComp};
 
-class DES : Block , Key
+class DES : public Block , public Key
 {
 private:
     bitset<64> temp;
@@ -29,8 +29,10 @@ private:
     uint64_t permutedChoice_I_64_56();
     uint64_t permutedChoice_II_28_28_48();
     uint64_t expansionPermutation_32_48();
+    uint64_t inverseInitialPermutation_64_64(uint64_t input);
     uint32_t S_boxes(uint64_t input);
-    uint8_t  S_box(bitset<6> input);
+    uint32_t S_box(bitset<6> input, short n);
+    uint32_t permutation_32_32();
     void round();
 public:
     DES(std::string plainText);

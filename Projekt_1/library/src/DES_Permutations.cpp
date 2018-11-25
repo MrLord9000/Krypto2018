@@ -84,3 +84,41 @@ uint64_t DES::expansionPermutation_32_48()
     }
     return permutation.to_ullong();
 }
+
+uint32_t DES::permutation_32_32()
+{
+    bitset<32> permutation;
+    bitset<32> original = static_cast<bitset<32>>(rText);
+    
+    const unsigned short permPositions[48] = {16,  7, 20, 21, 29, 12, 28, 17,
+                                               1, 15, 23, 26,  5, 18, 31, 10,
+                                               2,  8, 24, 14, 32, 27,  3,  9,
+                                              19, 13, 30,  6, 22, 11,  4, 25};
+
+    for(int i = 0; i < 32; i++)
+    {
+        permutation[i] = original[ permPositions[i] ];
+    }
+    return permutation.to_ullong();
+}
+
+uint64_t DES::inverseInitialPermutation_64_64(uint64_t input)
+{
+    bitset<64> permutation;
+    bitset<64> original = static_cast<bitset<64>>(input);
+    
+    const unsigned short permPositions[64] = {  40,	8,	48,	16,	56,	24,	64,	32,
+                                                39,	7,	47,	15,	55,	23,	63,	31,
+                                                38,	6,	46,	14,	54,	22,	62,	30,
+                                                37,	5,	45,	13,	53,	21,	61,	29,
+                                                36,	4,	44,	12,	52,	20,	60,	28,
+                                                35,	3,	43,	11,	51,	19,	59,	27,
+                                                34,	2,	42,	10,	50,	18,	58,	26,
+                                                33,	1,	41,	9,	49,	17,	57,	25};
+
+    for(int i = 0; i < 64; i++)
+    {
+        permutation[i] = original[ permPositions[i] ];
+    }
+    return permutation.to_ullong();
+}
