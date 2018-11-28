@@ -1,45 +1,14 @@
 #include "DES.hpp"
 
+unsigned short convBE(unsigned short input, unsigned short bits)
+{
+    return bits - input;
+}
 
 // +++++ Class constructor ++++++
 DES::DES(std::string plainText) 
 : Block(plainText.c_str()) { }
 
-/* ==Split======================================================================================
- * Simple function which takes a 64bit or 56bit input and returns its 
- * left or right half.
- * It uses two enum types "Sides" and "Component" for easy and understanadable
- * implementation.
- */
-uint32_t DES::split(Sides side, Component comp, uint64_t input)
-{
-    short bitMove;
-    switch(comp)    // Check for enum type "Component" to set temp and bitMove accordingly.
-    {
-        case textComp:
-            bitMove = 32;
-        break;
-
-        case keyComp:
-            bitMove = 28;
-        break;
-    }
-    switch(side)    // Check for enum type "Sides" to split the output either to left or right side.
-    {
-        // WARNING! Even though key is 56 bit, it is still stored in a 64 bit variable.
-        // The leftmost bits should be handled with care and at best deleted to prevent errors.
-        case rightSide:
-            return static_cast<uint32_t>(input);
-        break;
-
-        case leftSide:
-            temp = temp >> bitMove;
-            return static_cast<uint32_t>(input);
-        break;
-    }
-    return 0;
-}
-// ================================================================================================
 
 /* ==Left Circular Shift===========================================================================
  *  Shifts the bits left depending on a fixed value assigned to specific round number.

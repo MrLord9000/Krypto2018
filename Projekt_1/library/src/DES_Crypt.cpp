@@ -1,5 +1,5 @@
 #include "DES.hpp"
-
+/*
 uint64_t DES::encrypt()
 {
     uint64_t ciphertextTemp;
@@ -50,3 +50,4 @@ void DES::round()
     rText = text_32;
     roundCount++;
 }
+*/

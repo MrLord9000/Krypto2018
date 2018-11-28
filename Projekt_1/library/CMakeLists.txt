@@ -11,6 +11,8 @@ set(SOURCE_FILES
 		src/DES_Permutations.cpp
 		src/DES_Crypt.cpp
 		src/Key.cpp
+		src/Key_permutations.cpp
+		src/Others.cpp
 		)
 		
 add_library(Library ${SOURCE_FILES})

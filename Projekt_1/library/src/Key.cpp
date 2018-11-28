@@ -2,13 +2,31 @@
 
 Key::Key()
 {
-    srand( time(0) );   // Pseudo-random for key generation 
-                        // Warining! This is not secure and definitely not recommended
-//    keyGen();
-    key = 0xF5F3FF12F3FAFFAF;
-    paritySet();
+    baseKey = 0x133457799BBCDFF1;
+    generateKeys();
+    //paritySet();
 }
 
+void Key::generateKeys()
+{
+    cout << "Start key: " << baseKey << endl;
+    bit_cout(baseKey, 64);
+    uint64_t temp = permutedChoice_I_64_56();
+    cout << "After PermutedChoice I: " << temp << endl;
+    bit_cout(temp, 64);
+    keySides.right = static_cast<uint32_t>(temp) & 0xffffff;
+    keySides.left = static_cast<uint32_t>(temp >> 28) & 0xffffff;
+    cout << "Left side: ";
+    bit_cout(static_cast<uint64_t>(keySides.right), 32);
+    cout << "Right side: ";
+    bit_cout(static_cast<uint64_t>(keySides.left), 32);
+}
+
+void Key::split()
+{
+    
+}
+/*
 void Key::keyGen()
 {
     key = 0;
@@ -54,7 +72,7 @@ bool Key::checkForWeakKey()
 
 /* ==PARITY_SET===================================================================================
  * 
- */
+ *
 void Key::paritySet()
 {
     bitset<64> temp = static_cast<bitset<64>>(key);
@@ -78,3 +96,4 @@ void Key::paritySet()
     }
     key = temp.to_ullong();
 }
+*/

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "cstdint": "cpp",
+        "bitset": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
+}

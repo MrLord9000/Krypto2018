@@ -10,12 +10,13 @@
 
 using std::bitset;
 
-enum Sides {leftSide, rightSide};
-enum Component {textComp, keyComp};
+unsigned short convBE(unsigned short input, unsigned short bits);
 
 class DES : public Block , public Key
 {
-private:
+//private:
+public:
+// public only for testing!!!
     bitset<64> temp;
     uint8_t roundCount = 0;
     int32_t lText;
@@ -23,18 +24,15 @@ private:
     int32_t lKey;
     int32_t rKey;
     //uint64_t cryptogram; //Probably won't be nesessary as the main function will just return the cryptogram.
-    uint32_t split(Sides side, Component comp, uint64_t input);
     uint32_t leftCircularShift(uint32_t key28bit);
     uint64_t permutationInitial_64_64();
-    uint64_t permutedChoice_I_64_56();
-    uint64_t permutedChoice_II_28_28_48();
     uint64_t expansionPermutation_32_48();
     uint64_t inverseInitialPermutation_64_64(uint64_t input);
     uint32_t S_boxes(uint64_t input);
     uint32_t S_box(bitset<6> input, short n);
     uint32_t permutation_32_32(uint32_t input);
     void round();
-public:
+//public:
     DES(std::string plainText);
     uint64_t encrypt();
     

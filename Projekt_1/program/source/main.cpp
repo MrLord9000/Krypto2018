@@ -13,6 +13,7 @@
 
 using namespace std;
 
+
 int main()
 {
     //  Changing console coding to UTF-8 
@@ -116,15 +117,8 @@ int main()
      * all the plain text block fragmentation and operations.
      */
     
-    DES cryptoTest(plainText);
-    uint64_t cipher = cryptoTest.encrypt();
-    cout << "Chwila prawdy: " << hex << cipher << endl;
-    char test[8];
-    for(int i = 0; i < 8; i++)
-    {
-        test[i] = static_cast<char>(cipher);
-        cout << test[i] << " ";
-        cipher = cipher >> 8;
-    }
+    Key testKey;
+    
     return 0;
 }
+

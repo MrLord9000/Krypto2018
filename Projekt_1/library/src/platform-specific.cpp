@@ -15,4 +15,5 @@ void UTF_8()
 {
     system("chcp 65001 > nul"); // Warning! This is not recommended and should be changed in near future.
 }
+
 #endif 
