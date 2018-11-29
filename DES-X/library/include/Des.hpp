@@ -10,6 +10,7 @@ private:
     uint32_t feistelFunction(uint32_t input, uint8_t roundNo);
     uint64_t expansionPermutation(uint32_t input);
     uint32_t permutation(uint32_t input);
+    uint64_t inverseInitialPermutation(uint64_t input);
     uint32_t S_boxes(uint64_t input);
     uint32_t S_box(bitset<6> input, short n);
 public:

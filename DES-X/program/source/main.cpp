@@ -15,6 +15,8 @@ int main()
     //printBits(blockTest.initialPermutation(), 64, 4);
 
     Des testDes;
-    testDes.encrypt();
+    cout << endl;
+    cout << "\nEncrypted text:\n";
+    printBits(testDes.encrypt());
 
 }
