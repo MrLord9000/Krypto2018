@@ -5,6 +5,9 @@ project(Library)
 set(SOURCE_FILES
 		src/Key.cpp
 		src/Misc.cpp
+		src/Block.cpp
+		src/Des.cpp
+		src/Des_algorithms.cpp
 		)
 		
 add_library(Library ${SOURCE_FILES})
