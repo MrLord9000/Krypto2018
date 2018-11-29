@@ -3,30 +3,31 @@
 Key::Key()
 {
     baseKey = 0x133457799BBCDFF1;
+    generateKeys();
 }
 
 uint64_t Key::generateKeys()
 {
-cout << "Klucz bazowy:\t";
-printBits(baseKey, 64);
+//cout << "Klucz bazowy:\t";
+//printBits(baseKey, 64);
 
 
     uint64_t tempKey = permutedChoiceI();
 
 
-cout << "PermutedChoice I:\t";
-printBits(tempKey, 56, 7);
+//cout << "PermutedChoice I:\t";
+//printBits(tempKey, 56, 7);
 
 
     uint32_t rightKey = static_cast<uint32_t>(tempKey) & 0xfffffff;
     uint32_t leftKey = static_cast<uint32_t>(tempKey >> 28) & 0xfffffff;
 
-cout << "===== Round no. 0\n";
-cout << "Left key:\t";
-printBits(leftKey, 28, 7);
+//cout << "===== Round no. 0\n";
+//cout << "Left key:\t";
+//printBits(leftKey, 28, 7);
 
-cout << "Right key:\t";
-printBits(rightKey, 28, 7);
+//cout << "Right key:\t";
+//printBits(rightKey, 28, 7);
 
 
     //uint32_t tempLeft = leftCircularShift(leftKey, 0), 
@@ -39,12 +40,12 @@ printBits(rightKey, 28, 7);
             leftKey = leftCircularShift(leftKey, i);
             rightKey = leftCircularShift(rightKey, i);
 
-        cout << "===== Round no. " << i + 1 << endl;
-        cout << "Left key:\t";
-        printBits(leftKey, 28, 7);
+        //cout << "===== Round no. " << i + 1 << endl;
+        //cout << "Left key:\t";
+        //printBits(leftKey, 28, 7);
 
-        cout << "Right key:\t";
-        printBits(leftKey, 28, 7);
+        //cout << "Right key:\t";
+        //printBits(leftKey, 28, 7);
 
         //preparing next round
             
@@ -58,7 +59,7 @@ printBits(rightKey, 28, 7);
         cout << "Key " << i + 1 << " ";
         printBits(roundKeys[i], 48, 6);
     }
-
+    
 
     return 0;
 }
@@ -82,15 +83,15 @@ uint64_t Key::permutedChoiceI() //WORKING!
     return permutation.to_ullong();
 }
 
-uint64_t Key::permutedChoiceII(uint32_t leftIn, uint32_t rightIn)
+uint64_t Key::permutedChoiceII(uint32_t leftIn, uint32_t rightIn) //ALSO WORKING!!!
 {
     bitset<48> permutation;
     bitset<56> original = bitset<56>(leftIn);
                original <<= 28;
                original |= bitset<56>(rightIn);
 
-    cout << "\t\tConcatenated key: ";
-    printBits(original.to_ullong(), 56, 7);
+    //cout << "\t\tConcatenated key: ";
+    //printBits(original.to_ullong(), 56, 7);
 
     const unsigned short permPositions[48] = {14, 17, 11, 24,  1,  5,  3, 28, 15,  6, 21, 10,
                                               23, 19, 12,  4, 26,  8, 16,  7, 27, 20, 13,  2,

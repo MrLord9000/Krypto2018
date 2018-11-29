@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void printBits(uint64_t input, short bits, short groups = 8);
+void printBits(uint64_t input, short bits = 64, short groups = 8);
 int inv(unsigned short input, unsigned short bitsSize = 64);
 
 #endif
