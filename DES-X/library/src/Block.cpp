@@ -5,13 +5,14 @@ Block::Block(const char *plainText)
     textPosPointer = plainText; // Set pointer to the beginning of passed string
 /*  ============================================================================
  *  Load the first block into currentBlock                                      */
- //   nextBlock();
-    currentBlock = 0x123456789ABCDEF;
+    nextBlock();
+    //currentBlock = 0x123456789ABCDEF;
 }
 
 uint64_t Block::nextBlock()
 {
-    for (int i = 0; i < 8; i++)
+    currentBlock = 0;
+    for (int i = 0; i < 8 && *textPosPointer != '\0'; i++)
     {
         currentBlock += static_cast<uint8_t>(*textPosPointer); // Converting single character to 8 bit int value
         currentBlock = currentBlock << 8; // Shifting the binary representation of the char to make room for another one.
@@ -20,6 +21,7 @@ uint64_t Block::nextBlock()
          * because the nextBlock function depends on it's persistence.
          */
     }
+    cout << "\ncurrentblock: " << currentBlock << endl;
 }
 
 uint64_t Block::initialPermutation()

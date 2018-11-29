@@ -4,6 +4,8 @@
 #include "Block.hpp"
 #include "Key.hpp"
 
+enum CryptMode {encryptMode, decryptMode};
+
 class Des : public Key, public Block
 {
 private:
@@ -14,9 +16,10 @@ private:
     uint32_t S_boxes(uint64_t input);
     uint32_t S_box(bitset<6> input, short n);
 public:
+    CryptMode whatToDo;
     Des(const char *plainText = nullptr) : Block(plainText) {}
-    uint64_t encrypt(const char *plainText = nullptr, uint64_t key = 0);
-    uint64_t decrypt(const char *plainText, uint64_t key);
+    uint64_t encrypt();
+    uint64_t decrypt();
 
 };
 

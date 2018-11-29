@@ -3,6 +3,9 @@
         "cstdint": "cpp",
         "bitset": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "string": "cpp",
+        "variant": "cpp",
+        "*.tcc": "cpp"
     }
 }

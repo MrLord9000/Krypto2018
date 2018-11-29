@@ -2,14 +2,17 @@
 
 Key::Key()
 {
-    generateBaseKey();
+    generateBaseKeys();
 }
 
-void Key::generateBaseKey()
+void Key::generateBaseKeys()
 {
     mt19937 generator( time(0) );
     uniform_int_distribution<uint64_t> rand_uniform;
-    baseKey = rand_uniform(generator);
+    for(int i = 0; i < 3; i++)
+    {
+        baseKeys[i] = rand_uniform(generator);
+    }
 }
 
 uint64_t Key::generateRoundKeys()
@@ -34,7 +37,7 @@ uint64_t Key::generateRoundKeys()
 uint64_t Key::permutedChoiceI() //WORKING!
 {
     bitset<56> permutation;
-    bitset<64> original = static_cast<bitset<64>>(baseKey);
+    bitset<64> original = static_cast<bitset<64>>(baseKeys[1]);
 
     const unsigned short permPositions[56] = {57, 49, 41, 33, 25, 17,  9,  1, 58, 50, 42, 34, 26, 18,
                                               10,  2, 59, 51, 43, 35, 27, 19, 11,  3, 60, 52, 44, 36,
