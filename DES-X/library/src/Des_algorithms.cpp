@@ -3,25 +3,8 @@
 uint32_t Des::feistelFunction(uint32_t input, uint8_t roundNo)
 {
     uint64_t temp = expansionPermutation(input);
-
-// cout << "Expansion permutation:\t";
-// printBits(temp, 48, 6);
-
-// cout << "Key:\t\t";
-// printBits(getKey(roundNo), 48, 6);
-
     temp = temp ^ getKey(roundNo);
-
-// cout << "XOR 1:\t";
-// printBits(temp, 48, 6);
-
     uint32_t sboxOut = S_boxes(temp);
-
-// cout << "S-boxy:\t";
-// printBits(sboxOut, 32, 4);
-
-// cout << "PERMUTATION: ";
-// printBits(permutation(sboxOut), 32, 4);
 
     return permutation(sboxOut);
 }
@@ -97,10 +80,8 @@ uint32_t Des::S_boxes(uint64_t input)
     for(int i = 7, j = 0; i >= 0; i--, j++)
     {
         S_temp = static_cast<bitset<6>>(input);
-        //cout << "S-box " << i << " input " << S_temp << "\n";
         moveTemp = bitset<32>(S_box(S_temp, i));
         moveTemp <<= 4 * j;
-        //cout << "S-box " << i << " output " << output << "\n";
         output |= moveTemp;
         input >>= 6;
     }
@@ -114,11 +95,8 @@ uint32_t Des::S_box(bitset<6> input, short n)
     bitset<4> column = bitset<4>(input.to_ulong() >> 1) ;
     bitset<2> row = 0;
     row = bitset<2>(input[5]);
-    //cout << "Row 1: " << row << "\n";
     row <<= 1;
-    //cout << "Row 2: " << row << "\n";
     row |= bitset<2>(input[0]);
-    //cout << "Row 3: " << row << "\n";
 
     const unsigned short s_box_table[8][4][16] = {
                                   { {14,  4, 13,  1,  2, 15, 11,  8,  3, 10,  6, 12,  5,  9,  0,  7},
