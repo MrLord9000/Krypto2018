@@ -6,11 +6,11 @@ uint64_t Des::encrypt(const char *plainText, uint64_t key)
     uint32_t rightText = static_cast<uint32_t>(IPtext);
     uint32_t leftText = static_cast<uint32_t>(IPtext >> 32);
 
-cout << "Left text:\t";
-printBits(leftText, 32, 4);
+// cout << "Left text:\t";
+// printBits(leftText, 32, 4);
 
-cout << "Right text:\t";
-printBits(rightText, 32, 4);
+// cout << "Right text:\t";
+// printBits(rightText, 32, 4);
 
     //uint64_t temp = expansionPermutation(rightText);
 
@@ -25,24 +25,33 @@ printBits(rightText, 32, 4);
 
 // cout << "XOR:\t";
 // printBits(temp, 32, 4);
-    uint64_t leftCopy;
+    uint32_t leftCopy;
     for(int i = 0; i < 16; i++)
     {
         leftCopy = leftText;
         leftText = rightText;
         rightText = feistelFunction(rightText, i) ^ leftCopy;
-        cout << "TU JEST KONIEC RUNDY " << i + 1 << endl;
+        // cout << "TU JEST KONIEC RUNDY " << i + 1 << endl;
     }
 
-    leftCopy = leftText;
-    leftText = rightText;
-    rightText = leftCopy;
+// cout << "\nL16: ";
+// printBits(leftText, 32, 4);
 
-    IPtext = leftText;
+// cout << "\nR16: ";
+// printBits(rightText, 32 ,4);
+
+    // leftCopy = leftText;
+    // leftText = rightText;
+    // rightText = leftCopy;
+    IPtext = 0;
+    IPtext = static_cast<uint64_t>(rightText);
     IPtext <<= 32;
-    IPtext += rightText;
+    IPtext |= static_cast<uint64_t>(leftText);
 
-    cout << "Koncze szyfrowanie!\n";
+// cout << "Przed IIP: ";
+// printBits(IPtext);
+
+    // cout << "Koncze szyfrowanie!\n";
 
     return inverseInitialPermutation(IPtext);
 }
