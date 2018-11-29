@@ -2,9 +2,43 @@
 
 uint32_t Des::feistelFunction(uint32_t input, uint8_t roundNo)
 {
-    input = expansionPermutation(input);
-    input = input ^ getKey(roundNo);
-    return 0;
+    uint64_t temp = expansionPermutation(input);
+
+cout << "Expansion permutation:\t";
+printBits(temp, 48, 6);
+
+cout << "Key:\t\t";
+printBits(getKey(roundNo), 48, 6);
+
+    temp = temp ^ getKey(roundNo);
+
+cout << "XOR 1:\t";
+printBits(temp, 48, 6);
+
+    temp = S_boxes(temp);
+
+cout << "S-boxy:\t";
+printBits(temp, 32, 4);
+
+    return permutation(static_cast<uint32_t>(temp));
+}
+
+uint32_t Des::permutation(uint32_t input)
+{
+    bitset<32> permutation;
+    bitset<32> original = static_cast<bitset<32>>(input);
+    
+    const unsigned short permPositions[32] = {16,  7, 20, 21, 29, 12, 28, 17,
+                                               1, 15, 23, 26,  5, 18, 31, 10,
+                                               2,  8, 24, 14, 32, 27,  3,  9,
+                                              19, 13, 30,  6, 22, 11,  4, 25};
+
+    for(int i = 0, j = 31; i < 32; i++, j--)
+    {
+        permutation[j] = original[ inv(permPositions[i], 32) ];
+    }
+
+    return permutation.to_ulong();
 }
 
 uint64_t Des::expansionPermutation(uint32_t input)
@@ -19,7 +53,7 @@ uint64_t Des::expansionPermutation(uint32_t input)
                                               16, 17, 18, 19, 20, 21,
                                               20, 21, 22, 23, 24, 25,
                                               24, 25, 26, 27, 28, 29,
-                                              25, 29, 30, 31, 32,  1};
+                                              28, 29, 30, 31, 32,  1};
 
     for(int i = 0, j = 47; i < 48; i++, j--)
     {
@@ -33,12 +67,16 @@ uint32_t Des::S_boxes(uint64_t input)
 {
     bitset<32> output = 0;
     bitset<6> S_temp;
+    bitset<32> moveTemp;
 
-    for(int i = 0; i < 8; i++)
+    for(int i = 7, j = 0; i >= 0; i--, j++)
     {
         S_temp = static_cast<bitset<6>>(input);
-        output |= bitset<32>(S_box(S_temp, i));
-        output <<= 4;
+        //cout << "S-box " << i << " input " << S_temp << "\n";
+        moveTemp = bitset<32>(S_box(S_temp, i));
+        moveTemp <<= 4 * j;
+        //cout << "S-box " << i << " output " << output << "\n";
+        output |= moveTemp;
         input >>= 6;
     }
     
@@ -49,9 +87,13 @@ uint32_t Des::S_box(bitset<6> input, short n)
 {
     // Converting the 6 bit input into table positions.
     bitset<4> column = bitset<4>(input.to_ulong() >> 1) ;
-    bitset<2> row = bitset<2>(input[5]);
+    bitset<2> row = 0;
+    row = bitset<2>(input[5]);
+    //cout << "Row 1: " << row << "\n";
     row <<= 1;
+    //cout << "Row 2: " << row << "\n";
     row |= bitset<2>(input[0]);
+    //cout << "Row 3: " << row << "\n";
 
     const unsigned short s_box_table[8][4][16] = {
                                   { {14,  4, 13,  1,  2, 15, 11,  8,  3, 10,  6, 12,  5,  9,  0,  7},

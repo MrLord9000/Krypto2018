@@ -3,6 +3,7 @@
 Key::Key()
 {
     baseKey = 0x133457799BBCDFF1;
+    generateKeys();
 }
 
 uint64_t Key::generateKeys()
@@ -52,13 +53,13 @@ uint64_t Key::generateKeys()
 
     }
 
-    /*cout << "Keys after PC2:\n";
+    cout << "Keys after PC2:\n";
     for(int i = 0; i < 16; i++)
     {
         cout << "Key " << i + 1 << " ";
         printBits(roundKeys[i], 48, 6);
     }
-    */
+    
 
     return 0;
 }

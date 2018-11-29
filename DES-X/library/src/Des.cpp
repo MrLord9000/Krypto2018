@@ -12,10 +12,19 @@ printBits(leftText, 32, 4);
 cout << "Right text:\t";
 printBits(rightText, 32, 4);
 
-    uint64_t temp = expansionPermutation(rightText);
+    //uint64_t temp = expansionPermutation(rightText);
 
-cout << "Expansion permutation:\t";
-printBits(temp, 48, 6);
+
+
+    uint64_t temp = feistelFunction(rightText, 0);
+
+cout << "Feistel:\t";
+printBits(temp, 32, 4);
+
+    temp = temp ^ leftText;
+
+cout << "XOR:\t";
+printBits(temp, 32, 4);
 
     return 0;
 }
