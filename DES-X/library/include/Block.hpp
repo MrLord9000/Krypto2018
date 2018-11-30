@@ -14,7 +14,8 @@ public:
 //private:
     uint64_t initialPermutation();
     const char *textPosPointer;
-
+//public:
+    string fromBlock(uint64_t input);
 };
 
 #endif 

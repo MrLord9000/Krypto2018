@@ -14,7 +14,7 @@ private:
     uint64_t roundKeys[16];
 // ----- Generators -----
     void generateBaseKeys();
-    uint64_t generateRoundKeys();
+
 // ----- Permutations ------
     uint64_t permutedChoiceI();
     uint64_t permutedChoiceII(uint32_t leftIn, uint32_t rightIn);
@@ -24,8 +24,10 @@ public:
 // ----- Constructors -----
     Key();
 // ----- Getters/Setters -----
+    void generateRoundKeys();
     uint64_t getKey(uint8_t n) { return roundKeys[n]; }
     uint64_t getBaseKey(uint8_t n) { return baseKeys[n]; }
+    void setBaseKey(uint64_t base, uint8_t n) { baseKeys[n] = base; }
 
     
 };

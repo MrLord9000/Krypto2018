@@ -47,6 +47,7 @@ int main()
  */
                 string plainText;
                 string cryptogram;
+                uint64_t tempTemp;
 //  =======================================================================================
 
 /*  =======================================================================================
@@ -206,8 +207,8 @@ int main()
              */
 
             cin.get();  // Refreshing the cin stream for getline to work properly.
-            getline(cin, cryptogram); // Getting the line of text typed by user.
-
+            //getline(cin, cryptogram); // Getting the line of text typed by user.
+            cin >> tempTemp;
             cout << "| Paste your first key:                                                                    |\n"
                     "============================================================================================\n";
             gotoxy(24, 3);
@@ -249,11 +250,11 @@ int main()
             {
                 desxKeys[i] = cryptEngineMain.getBaseKey(i);
             }
-            cryptEngineMain.whatToDo = encryptMode;
-            cryptogram = cryptEngineMain.encrypt();
-
+            //cout << cryptEngineMain.currentBlock;
+            //cryptogram = cryptEngineMain.fromBlock(cryptEngineMain.encrypt());
+            uint64_t tempCryptogram = cryptEngineMain.encrypt();
             cout << "\nYour plaintext:\t\t" << plainText << "\n";
-            cout << "Generated cryptogram:\t" << cryptogram << "\n";
+            cout << "Generated cryptogram:\t" << tempCryptogram << "\n";
             for(int i = 0; i < 3; i++)
             {
                 cout << "Key " << i << ":\t" << desxKeys[i] << "\n";
@@ -263,7 +264,17 @@ int main()
         case '2':
         // Decrypt
         {
-
+            Des cryptEngineMain;
+            cryptEngineMain.currentBlock = tempTemp;
+            cryptEngineMain.setBaseKey(desxKeys[1], 1);
+            cryptEngineMain.generateRoundKeys();
+            plainText = cryptEngineMain.fromBlock(cryptEngineMain.decrypt());
+            cout << "\nYour cryptogram:\t\t" << cryptogram << "\n";
+            cout << "Generated plaintext:\t" << plainText << "\n";
+            for(int i = 0; i < 3; i++)
+            {
+                cout << "Key " << i << ":\t" << desxKeys[i] << "\n";
+            }
         }
         break;
     }

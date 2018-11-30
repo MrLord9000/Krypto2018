@@ -15,7 +15,7 @@ void Key::generateBaseKeys()
     }
 }
 
-uint64_t Key::generateRoundKeys()
+void Key::generateRoundKeys()
 {
     uint64_t tempKey = permutedChoiceI();
 
@@ -29,8 +29,6 @@ uint64_t Key::generateRoundKeys()
             
             roundKeys[i] = permutedChoiceII(leftKey, rightKey);
     }
-    
-    return 0;
 }
 
 
