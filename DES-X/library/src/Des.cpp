@@ -42,5 +42,6 @@ uint64_t Des::decrypt()
     IPtext |= static_cast<uint64_t>(leftText);
 
     cout << "\n" << inverseInitialPermutation(IPtext);
+    
     return inverseInitialPermutation(IPtext);
 }

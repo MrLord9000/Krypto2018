@@ -18,6 +18,7 @@ private:
 public:
     CryptMode whatToDo;
     Des(const char *plainText = nullptr) : Block(plainText) {}
+    Des(uint64_t block) : Block(block) {}
     uint64_t encrypt();
     uint64_t decrypt();
 

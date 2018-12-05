@@ -1,29 +1,41 @@
 #include "Block.hpp"
 
+
 Block::Block(const char *plainText)
 {
     textPosPointer = plainText; // Set pointer to the beginning of passed string
 /*  ============================================================================
  *  Load the first block into currentBlock                                      */
-    //nextBlock();
-    //currentBlock = 0x123456789ABCDEF;
+    nextBlock();
 }
 
-uint64_t Block::nextBlock()
+Block::Block(uint64_t block)
 {
+    currentBlock = block;
+}
+
+bool Block::nextBlock()
+{
+    bool textEnd = false;
     currentBlock = 0;
-    for (int i = 0; i < 8 && *textPosPointer != '\0'; i++)
+    if(*textPosPointer != '\0')
     {
-        cout << *textPosPointer << " ";
-        cout << static_cast<uint8_t>(*textPosPointer) << " ";
-        currentBlock += static_cast<uint8_t>(*textPosPointer); // Converting single character to 8 bit int value
-        currentBlock = currentBlock << 8; // Shifting the binary representation of the char to make room for another one.
-        textPosPointer += 1; // Moving the pointer to next character in string.
-        /* NOTE: this pointer is a private member of this class and should be handled with care
-         * because the nextBlock function depends on it's persistence.
-         */
+        for (int i = 0; i < 8; i++)
+        {
+            currentBlock = currentBlock << 8; // Shifting the binary representation of the char to make room for another one.
+            if(*textPosPointer != '\0' && !textEnd)
+            {
+                currentBlock += static_cast<uint8_t>(*textPosPointer); // Converting single character to 8 bit int value   
+            }
+            else
+            {
+                currentBlock += static_cast<uint8_t>(' ');
+                textEnd = true;
+            }
+            textPosPointer += 1; // Moving the pointer to next character in string.
+        }
     }
-    cout << "\ncurrentblock: " << currentBlock << endl;
+    return textEnd;
 }
 
 uint64_t Block::initialPermutation()
@@ -48,18 +60,21 @@ uint64_t Block::initialPermutation()
     return permutation.to_ullong();
 }
 
-string Block::fromBlock(uint64_t input)
+string Block::getCurrentBlockStr(uint64_t input)
 {
     string temp;
-    cout << "\ninput: " << input;
     uint64_t copy;
-    cout << "\ncopy: " << copy;
-    cout << "\ncopy hex:" << hex << copy;
-    for(int i = 0, j = 64; i < 8; i++, j -= 8)
+    if(input == 0) copy = currentBlock;
+    else copy = input;
+    
+    for(int i = 0, j = 56; i < 8; i++, j -= 8)
     {
-        copy = input;
-        cout << static_cast<char>(copy >> j);
         temp.push_back(static_cast<char>(copy >> j));
     }
     return temp;
+}
+
+uint64_t Block::getCurrentBlockInt()
+{
+    return currentBlock;
 }

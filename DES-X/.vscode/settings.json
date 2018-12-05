@@ -7,5 +7,6 @@
         "string": "cpp",
         "variant": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "C_Cpp.configurationWarnings": "Disabled"
 }

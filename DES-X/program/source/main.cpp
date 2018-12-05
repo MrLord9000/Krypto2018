@@ -10,7 +10,7 @@ int main()
 {
     //  Changing console coding to UTF-8 
     UTF_8();
-    //  Cleaning the console (from "platform-specific" lib)
+    //  Cleaning the console (from "Misc" lib)
     cls();
 
     cout <<         "================================\n"
@@ -46,8 +46,8 @@ int main()
  *  This variable will be used as a main container for plain text which will get encrypted.
  */
                 string plainText;
-                string cryptogram;
-                uint64_t tempTemp;
+                uint64_t cryptogram;
+                string temp; // delete this
 //  =======================================================================================
 
 /*  =======================================================================================
@@ -159,7 +159,7 @@ int main()
 
             //  File handling functions
             FileInput fileHandler(path); // Calling the parametric constructor and creating fileHandler object.
-            fileHandler.loadFromFile(cryptogram); // Calling the loadFile member function. 
+            fileHandler.loadFromFile(temp); // Calling the loadFile member function. 
             fileHandler.closeFile();
             cout << "============================================================================\n"
                     "| Input keys file path:                                                    |\n"
@@ -208,7 +208,7 @@ int main()
 
             cin.get();  // Refreshing the cin stream for getline to work properly.
             //getline(cin, cryptogram); // Getting the line of text typed by user.
-            cin >> tempTemp;
+            cin >> cryptogram;
             cout << "| Paste your first key:                                                                    |\n"
                     "============================================================================================\n";
             gotoxy(24, 3);
@@ -264,12 +264,11 @@ int main()
         case '2':
         // Decrypt
         {
-            Des cryptEngineMain;
-            cryptEngineMain.currentBlock = tempTemp;
+            Des cryptEngineMain(cryptogram);
             cryptEngineMain.setBaseKey(desxKeys[1], 1);
             cryptEngineMain.generateRoundKeys();
-            plainText = cryptEngineMain.fromBlock(cryptEngineMain.decrypt());
-            cout << "\nYour cryptogram:\t\t" << cryptogram << "\n";
+            cryptogram = cryptEngineMain.decrypt();
+            cout << "\nYour cryptogram:\t\t" << cryptEngineMain.getCurrentBlockStr(cryptogram) << "\n";
             cout << "Generated plaintext:\t" << plainText << "\n";
             for(int i = 0; i < 3; i++)
             {
@@ -278,7 +277,6 @@ int main()
         }
         break;
     }
-    
-    cin.get();
+
     return 0;
 }

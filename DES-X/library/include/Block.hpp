@@ -5,17 +5,19 @@
 
 class Block
 {
-public:
-//protected:
+private:
     uint64_t currentBlock = 0;
-    Block(const char *plainText = nullptr);
-    uint64_t nextBlock();
-
-//private:
-    uint64_t initialPermutation();
     const char *textPosPointer;
-//public:
-    string fromBlock(uint64_t input);
+
+protected:
+    uint64_t initialPermutation();
+
+public:
+    Block(const char *plainText = nullptr);
+    Block(uint64_t block);
+    bool nextBlock();
+    string getCurrentBlockStr(uint64_t input = 0);
+    uint64_t getCurrentBlockInt();
 };
 
 #endif 
