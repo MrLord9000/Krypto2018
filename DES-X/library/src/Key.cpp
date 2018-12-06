@@ -3,6 +3,7 @@
 Key::Key()
 {
     generateBaseKeys();
+    generateRoundKeys();
 }
 
 void Key::generateBaseKeys()

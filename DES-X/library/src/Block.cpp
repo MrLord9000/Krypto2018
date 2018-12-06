@@ -6,12 +6,12 @@ Block::Block(const char *plainText)
     textPosPointer = plainText; // Set pointer to the beginning of passed string
 /*  ============================================================================
  *  Load the first block into currentBlock                                      */
-    //nextBlock();
+    nextBlock();
 }
 
 Block::Block(uint64_t block)
 {
-    currentBlock = 0x0123456789ABCDEF;
+    currentBlock = block;
 }
 
 bool Block::nextBlock()

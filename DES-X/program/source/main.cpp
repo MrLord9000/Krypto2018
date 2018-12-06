@@ -15,7 +15,7 @@ int main()
 
     cout <<         "================================\n"
                     "| Podstawy kryptografii 2018   |\n"
-                    "| Version: inDev 0.1           |\n"
+                    "| Version: 0.9                 |\n"
                     "| Made by: Adriannna Dudek     |\n"
                     "|          Julita Włodarczyk   |\n"
                     "|          Filip Mazurek       |\n"
@@ -26,11 +26,13 @@ int main()
     cout <<         "| What would you like to do?   |\n"
                     "| 1. Encrypt                   |\n"
                     "| 2. Decrypt                   |\n"
+                    "| 0. Exit                      |\n"
                     "| Choose:                      |\n"
                     "================================\n";
     gotoxy(10, 12); //  Tell the cursor to move next to "Choose: " in the cout message.
     char cryptChoice;
     cin >> cryptChoice;
+    if(cryptChoice == 0) exit(0);
 
     cout <<         "| How to load data?            |\n"
                     "| 1. File                      |\n"
@@ -47,7 +49,6 @@ int main()
  */
                 string plainText;
                 uint64_t cryptogram;
-                string temp; // delete this
 //  =======================================================================================
 
 /*  =======================================================================================
@@ -225,6 +226,7 @@ int main()
             gotoxy(24, 5);
             cin >> desxKeys[2];
 
+            gotoxy(24, 7);
             cout << "@\tPlaintext input succesful, proceeding in 1 s...";
             wait(1000);
             break;
@@ -254,10 +256,10 @@ int main()
             //cryptogram = cryptEngineMain.fromBlock(cryptEngineMain.encrypt());
             uint64_t tempCryptogram = cryptEngineMain.encrypt();
             cout << "\nYour plaintext:\t\t" << plainText << "\n";
-            cout << "Generated cryptogram:\t" << tempCryptogram << "\n";
+            cout << "Generated cryptogram:\t" << hex << tempCryptogram << "\n";
             for(int i = 0; i < 3; i++)
             {
-                cout << "Key " << i << ":\t" << desxKeys[i] << "\n";
+                cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
             }
         }
         break;
@@ -268,11 +270,11 @@ int main()
             cryptEngineMain.setBaseKey(desxKeys[1], 1);
             cryptEngineMain.generateRoundKeys();
             cryptogram = cryptEngineMain.decrypt();
-            cout << "\nYour cryptogram:\t\t" << cryptEngineMain.getCurrentBlockStr(cryptogram) << "\n";
-            cout << "Generated plaintext:\t" << plainText << "\n";
+            cout << "\nYour cryptogram:\t\t" << hex << cryptogram << "\n";
+            cout << "Generated plaintext:\t" << hex << plainText << "\n";
             for(int i = 0; i < 3; i++)
             {
-                cout << "Key " << i << ":\t" << desxKeys[i] << "\n";
+                cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
             }
         }
         break;
