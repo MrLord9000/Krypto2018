@@ -16,11 +16,11 @@ private:
     uint32_t S_boxes(uint64_t input);
     uint32_t S_box(bitset<6> input, short n);
 public:
-    CryptMode whatToDo;
-    Des(const char *plainText = nullptr) : Block(plainText) {}
-    Des(uint64_t block) : Block(block) {}
-    uint64_t encrypt();
-    uint64_t decrypt();
+    Des(const char *plainText) : Block(plainText) {}
+    Des(const char *plainText, uint64_t key) : Block(plainText), Key(key) {}
+    Des(const char *plainText, uint64_t keys[3]) : Block(plainText), Key(keys) {}
+    const char *encrypt();
+    const char *decrypt();
 
 };
 

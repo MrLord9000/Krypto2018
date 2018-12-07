@@ -9,11 +9,6 @@ Block::Block(const char *plainText)
     nextBlock();
 }
 
-Block::Block(uint64_t block)
-{
-    currentBlock = block;
-}
-
 bool Block::nextBlock()
 {
     bool textEnd = false;

@@ -48,7 +48,7 @@ int main()
  *  This variable will be used as a main container for plain text which will get encrypted.
  */
                 string plainText;
-                uint64_t cryptogram;
+                string cryptogram;
 //  =======================================================================================
 
 /*  =======================================================================================
@@ -159,9 +159,11 @@ int main()
             }
 
             //  File handling functions
-            FileInput fileHandler(path); // Calling the parametric constructor and creating fileHandler object.
-            fileHandler.loadFromFile(temp); // Calling the loadFile member function. 
-            fileHandler.closeFile();
+                FileInput fileHandler(path); // Calling the parametric constructor and creating fileHandler object.
+                fileHandler.loadFromFile(plainText); // Calling the loadFile member function. 
+                fileHandler.closeFile();
+
+
             cout << "============================================================================\n"
                     "| Input keys file path:                                                    |\n"
                     "| (Enter for default desxKeys.txt)                                         |\n"
@@ -248,15 +250,10 @@ int main()
         // Encrypt
         {
             Des cryptEngineMain(plainText.c_str());
-            for(int i = 0; i < 3; i++)
-            {
-                desxKeys[i] = cryptEngineMain.getBaseKey(i);
-            }
-            //cout << cryptEngineMain.currentBlock;
-            //cryptogram = cryptEngineMain.fromBlock(cryptEngineMain.encrypt());
-            uint64_t tempCryptogram = cryptEngineMain.encrypt();
+            cryptEngineMain.getBaseKeys(desxKeys);
+            cryptogram = cryptEngineMain.encrypt();
             cout << "\nYour plaintext:\t\t" << plainText << "\n";
-            cout << "Generated cryptogram:\t" << hex << tempCryptogram << "\n";
+            cout << "Generated cryptogram:\t" << cryptogram << "\n";
             for(int i = 0; i < 3; i++)
             {
                 cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
@@ -266,7 +263,7 @@ int main()
         case '2':
         // Decrypt
         {
-            Des cryptEngineMain(cryptogram);
+            Des cryptEngineMain(plainText, desxKeys);
             cryptEngineMain.setBaseKey(desxKeys[1], 1);
             cryptEngineMain.generateRoundKeys();
             cryptogram = cryptEngineMain.decrypt();
@@ -275,7 +272,7 @@ int main()
             for(int i = 0; i < 3; i++)
             {
                 cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
-            }
+            }*/
         }
         break;
     }

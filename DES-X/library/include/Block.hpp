@@ -14,7 +14,6 @@ protected:
 
 public:
     Block(const char *plainText = nullptr);
-    Block(uint64_t block);
     bool nextBlock();
     string getCurrentBlockStr(uint64_t input = 0);
     uint64_t getCurrentBlockInt();

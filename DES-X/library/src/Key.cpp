@@ -6,6 +6,25 @@ Key::Key()
     generateRoundKeys();
 }
 
+Key::Key(uint64_t key)
+{
+    setBaseKey(key);
+    generateRoundKeys();
+}
+
+Key::Key(uint64_t keys[3])
+{
+    setBaseKeys(keys);
+    generateRoundKeys();
+}
+
+void Key::getBaseKeys(uint64_t keys[3])
+{
+    for(int i = 0; i < 3; i++)
+    {
+        keys[i] = baseKeys[i];
+    }
+}
 void Key::generateBaseKeys()
 {
     mt19937 generator( time(0) );
@@ -32,6 +51,13 @@ void Key::generateRoundKeys()
     }
 }
 
+void Key::setBaseKeys(uint64_t base[3])
+{
+    for(int i = 0; i < 3; i++)
+    {
+        baseKeys[i] = base[i];
+    }
+}
 
 uint64_t Key::permutedChoiceI() //WORKING!
 {
