@@ -6,10 +6,10 @@
 class Block
 {
 private:
-    uint64_t currentBlock = 0;
     const char *textPosPointer;
 
 protected:
+    uint64_t currentBlock = 0;
     uint64_t initialPermutation();
 
 public:

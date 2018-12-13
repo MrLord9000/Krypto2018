@@ -3,6 +3,7 @@
 #include "Des.hpp"
 #include "FileIO.hpp"
 #include "CarriageControl.hpp"
+#include <string>
 
 using namespace std;
 
@@ -250,29 +251,34 @@ int main()
         // Encrypt
         {
             Des cryptEngineMain(plainText.c_str());
+            FileInput fileMan("cryptogram.txt");
             cryptEngineMain.getBaseKeys(desxKeys);
             cryptogram = cryptEngineMain.encrypt();
             cout << "\nYour plaintext:\t\t" << plainText << "\n";
             cout << "Generated cryptogram:\t" << cryptogram << "\n";
+            fileMan.saveToFile(cryptogram);
+            fileMan.closeFile();
+            fileMan.setPath("desxKeys.txt");
             for(int i = 0; i < 3; i++)
             {
                 cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
+                string tempKey = to_string(desxKeys[i]);
+                fileMan.saveToFile(tempKey);
             }
+            fileMan.closeFile();
         }
         break;
         case '2':
         // Decrypt
         {
-            Des cryptEngineMain(plainText, desxKeys);
-            cryptEngineMain.setBaseKey(desxKeys[1], 1);
-            cryptEngineMain.generateRoundKeys();
+            Des cryptEngineMain(cryptogram.c_str(), desxKeys);
             cryptogram = cryptEngineMain.decrypt();
-            cout << "\nYour cryptogram:\t\t" << hex << cryptogram << "\n";
-            cout << "Generated plaintext:\t" << hex << plainText << "\n";
+            cout << "\nYour cryptogram:\t\t" << cryptogram << "\n";
+            cout << "Generated plaintext:\t" << plainText << "\n";
             for(int i = 0; i < 3; i++)
             {
                 cout << "Key " << i << ":\t" << hex << desxKeys[i] << "\n";
-            }*/
+            }
         }
         break;
     }

@@ -2,6 +2,8 @@
 
 const char *Des::encrypt()
 {
+    cout << "Początek: " << currentBlock << "\n";
+    currentBlock = currentBlock ^ getBaseKey(0);
     string output;
     do
     {
@@ -23,6 +25,10 @@ const char *Des::encrypt()
         IPtext |= static_cast<uint64_t>(leftText);
         IPtext = inverseInitialPermutation(IPtext);
 
+        IPtext = IPtext ^ getBaseKey(2);
+
+        cout << "Blok: " << getCurrentBlockStr(IPtext) << "\n";
+
         output.append(getCurrentBlockStr(IPtext));
     } while(!nextBlock());
     
@@ -31,6 +37,8 @@ const char *Des::encrypt()
 
 const char *Des::decrypt()
 {
+    currentBlock = currentBlock ^ getBaseKey(2);
+
     string output;
     do
     {
@@ -51,6 +59,8 @@ const char *Des::decrypt()
         IPtext <<= 32;
         IPtext |= static_cast<uint64_t>(leftText);
         IPtext = inverseInitialPermutation(IPtext);
+
+        IPtext = IPtext ^ getBaseKey(0);
 
         output.append(getCurrentBlockStr(IPtext));
     } while(!nextBlock());

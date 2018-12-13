@@ -30,6 +30,7 @@ bool Block::nextBlock()
             textPosPointer += 1; // Moving the pointer to next character in string.
         }
     }
+    cout << "Next block: " << currentBlock << "\n"; 
     return textEnd;
 }
 
